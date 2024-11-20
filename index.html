@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTT</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+	<div class="panel">
+        <div class="panel-header">
+            Network Element
+        </div>
+        <div class="panel-content">
+            <form>
+                <table>
+					<thead>
+						<tr>
+							<th>NE ID</th>
+							<th>NE Type</th>
+							<th>Brand</th>
+							<th>Card</th>
+							<th>Port</th>
+							<th>Node</th>
+							<th>Wilayah</th>
+							<th>Region</th>
+							<th>Root</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><input type="checkbox" class="row-checkbox"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><input type="checkbox" class="row-checkbox"></td>
+						</tr>
+					</tbody>
+				</table>
+            </form>
+        </div>
+    </div>
+	
+    <div class="panel">
+        <div class="panel-header">
+            Network Ticket Information
+        </div>
+        <div class="panel-content">
+            <form>
+                <div class="form-row">
+                    <!-- Left Side -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="network">Network Tickets No:</label>
+                            <input type="text" id="network" name="network" placeholder="Enter Network Tickets No">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="date">Created Date:</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="network">Creator Name :</label>
+                            <input type="text" id="creator" name="creator" placeholder="Enter Creator Name">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="ticketstatus">Network Tickets Status :</label>
+                            <select id="status" name="status">
+                                <option value="" disabled selected>Network Tickets Status</option>
+                                <option value="open">Open</option>
+                                <option value="close">Close</option>
+								<option value="resolved">Resolved</option>
+                            </select>
+                        </div>
+						
+                        <div class="form-group">
+                            <label for="region">Region :</label>
+                            <select id="region" name="region">
+                                <option value="" disabled selected>Select Region</option>
+                                <option value="north">North</option>
+                                <option value="south">South</option>
+                                <option value="east">East</option>
+                                <option value="west">West</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="ptt">PTT :</label>
+                            <select id="ptt" name="ptt">
+                                <option value="" disabled selected>Select PTT</option>
+                                <option value="ptt1">PTT 1</option>
+                                <option value="ptt2">PTT 2</option>
+                                <option value="ptt3">PTT 3</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="building">Building :</label>
+                            <select id="building" name="building">
+                                <option value="" disabled selected>Select Building</option>
+                                <option value="building1">Building 1</option>
+                                <option value="building2">Building 2</option>
+                                <option value="building3">Building 3</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="faultcategory">Fault Category :</label>
+                            <select id="faultcategory" name="faultcategory">
+                                <option value="" disabled selected>Select Fault Category</option>
+                                <option value="faultcategory1">Fault Category 1</option>
+                                <option value="faultcategory2">Fault Category 2</option>
+                                <option value="faultcategory3">Fault Category 3</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="serviceimpacted">Service Impacted :</label>
+                            <select id="serviceimpacted" name="serviceimpacted">
+                                <option value="" disabled selected>Select Service Impacted</option>
+                                <option value="serviceimpacted1">Service Impacted 1</option>
+                                <option value="serviceimpacted2">Service Impacted 2</option>
+                                <option value="serviceimpacted3">Service Impacted 3</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="possiblesymptom">Possible Sysmptom :</label>
+                            <select id="possiblesymptom" name="possiblesymptom">
+                                <option value="" disabled selected>Select Possible Sysmptom</option>
+                                <option value="possiblesymptom1">Possible Sysmptom 1</option>
+                                <option value="possiblesymptom2">Possible Sysmptom 2</option>
+                                <option value="possiblesymptom3">Possible Sysmptom 3</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="responsibilityunit">Responsibility Unit :</label>
+                            <select id="responsibilityunit" name="responsibilityunit">
+                                <option value="" disabled selected>Select Responsibility Unit</option>
+                                <option value="responsibilityunit1">Responsibility Unit 1</option>
+                                <option value="responsibilityunit2">Responsibility Unit 2</option>
+                                <option value="responsibilityunit3">Responsibility Unit 3</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="colorcode">Network Tickets Color Code :</label>
+                            <select id="colorcode" name="colorcode">
+                                <option value="" disabled selected>Select Color Code</option>
+                                <option value="colorcode1">Green</option>
+                                <option value="colorcode2">Yellow</option>
+                                <option value="colorcode3">Red</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="date">Estimate Time to Resolve:</label>
+                            <input type="datetime-local" id="date" name="date">
+                        </div>
+
+						<div class="form-group">
+                            <label for="button"> </label>
+                            <button type="submit" id="update-btn">Update</button>
+							<button type="button" id="history-btn">History</button>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="charge">Person In Charge:</label>
+                            <input type="text" id="charge" name="charge" placeholder="Enter Person In Charge">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="button"> </label>
+                            <button type="domain" id="domain-btn">Domain Owner</button>
+							<button type="claim" id="claim-btn">Claim Report</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side -->
+                    <div class="form-column">
+						<div class="form-group">
+							<label for="description">Problem Description:</label>
+							<textarea id="description" name="description" placeholder="Enter Problem Description"></textarea>
+						</div>
+						
+						<div class="form-group">
+                            <label for="totalImpacted">Total Service Impacted :</label>
+                            <input type="text" id="totalImpacted" name="totalImpacted" placeholder="Enter Total Service Impacted">
+                        </div>
+						
+                        <div class="form-group">
+							<label>Flag to NMCC :</label>
+							<div class="checkbox-group">
+								<label><input type="checkbox" name="NMCC" value=" "> </label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label>Major Breakdown :</label>
+							<div class="checkbox-group">
+								<label><input type="checkbox" name="breakdown" value=" "> </label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label>Root Cause Network Ticket :</label>
+							<div class="checkbox-group">
+								<label><input type="checkbox" name="rootCause" value=" "> </label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+                            <label for="infectedArea">Infected Area :</label>
+                            <select id="infectedArea" name="infectedArea">
+                                <option value="" disabled selected>Select Infected Area</option>
+                                <option value="north">North</option>
+                                <option value="south">South</option>
+                                <option value="east">East</option>
+                                <option value="west">West</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="faultySeverity">Faulty Severity :</label>
+                            <select id="faultySeverity" name="faultySeverity">
+                                <option value="" disabled selected>Select Faulty Severity</option>
+                                <option value="minor">Minor</option>
+                                <option value="major">Major</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="ref">Ext Ref No :</label>
+                            <input type="text" id="ref" name="ref" placeholder="Enter Ext Ref No">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="date">Resolved Date:</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+	
+	<div class="panel">
+        <div class="panel-header">
+            BUDI Work Order
+        </div>
+        <div class="panel-content">
+            <form>
+                <div class="form-row">
+                    <!-- Left Side -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="budi">BUDI Ticket Ref No:</label>
+                            <input type="text" id="budi" name="budi" placeholder="Enter BUDI Ticket Ref No">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="date">Created Date:</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="date">Completed Date :</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side -->
+                    <div class="form-column">
+						<div class="form-group">
+                            <label for="workOrder">Create Work Order :</label>
+                            <input type="date" id="workOrder" name="workOrder">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="status">Check Status :</label>
+                            <select id="status" name="status">
+                                <option value="" disabled selected>Select Status</option>
+                                <option value="status1">Status 1</option>
+                                <option value="status2">Status 2</option>
+                                <option value="status3">Status 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+	
+	<div class="panel">
+        <div class="panel-header">
+            MTTR
+        </div>
+        <div class="panel-content">
+            <form>
+                <div class="form-row">
+                    <!-- Left Side -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="date">Alarm Start:</label>
+                            <input type="datetime-local" id="date" name="date">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="date">Network Alarm Cleared:</label>
+                            <input type="datetime-local" id="date" name="date">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="date">Service Alarm Cleared:</label>
+                            <input type="datetime-local" id="date" name="date">
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side -->
+                    <div class="form-column">
+						<div class="form-group">
+                            <label for="date">MTTR Network Alarm Cleared:</label>
+                            <input type="datetime-local" id="date" name="date">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="date">MTTR Service Alarm Cleared:</label>
+                            <input type="datetime-local" id="date" name="date">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+	
+	<div class="panel">
+        <div class="panel-header">
+            Network Tickets Status
+        </div>
+        <div class="panel-content">
+            <form>
+                <div class="form-row">
+                    <!-- Left Side -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="ticketstatus">Change Network Tickets Status :</label>
+                            <select id="status" name="status">
+                                <option value="" disabled selected>Change Network Tickets Status</option>
+                                <option value="open">Open</option>
+                                <option value="close">Close</option>
+								<option value="resolved">Resolved</option>
+                            </select>
+                        </div>
+						
+						<div class="form-group">
+                            <label for="root">LR & Root Cause :</label>
+                            <input type="text" id="root" name="root" placeholder="Enter LR & Root Cause">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="link">Link Reports & Root Cause :</label>
+                            <input type="text" id="link" name="link" placeholder="Enter Link Reports & Root Cause">
+                        </div>
+						
+						<div class="form-group">
+                            <label for="related">Related NE :</label>
+                            <input type="text" id="related" name="related" placeholder="Enter Relted NE">
+                        </div>
+					</div>
+                    
+                    <!-- Right Side -->
+                    <div class="form-column">
+						<div class="form-group">
+                            <label for="ctt">CTT Link With :</label>
+                            <input type="text" id="ctt" name="ctt" placeholder="Enter CTT Link With">
+                        </div>
+						
+						<div class="form-group">
+							<label for="troubleshhoting">Trobleshooting Notes:</label>
+							<textarea id="troubleshhoting" name="troubleshhoting" placeholder="Enter Troubleshooting Notes"></textarea>
+						</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+	
+	<div class="panel">
+        <div class="panel-header">
+            Network Tickets Details
+        </div>
+        <div class="panel-menu">
+            <button class="menu-btn" onclick="showPanel('notes')">Notes</button>
+            <button class="menu-btn" onclick="showPanel('activities')">Activities</button>
+            <button class="menu-btn" onclick="showPanel('notification')">Notification</button>
+            <button class="menu-btn" onclick="showPanel('audit-trail')">Audit Trail</button>
+        </div>
+        <div class="panel-content">
+            <div id="notes" class="panel-section">
+                <table>
+					<thead>
+						<tr>
+							<th>Notes</th>
+							<th>Added By</th>
+							<th>Added Date Time</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="form-group">
+					<textarea id="notes" name="notes" placeholder="Enter Notes"></textarea>
+				</div>
+            </div>
+            <div id="activities" class="panel-section" style="display: none;">
+                <table>
+					<thead>
+						<tr>
+							<th>Activities</th>
+							<th>Date & Time</th>
+							<th>By</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+            </div>
+            <div id="notification" class="panel-section" style="display: none;">
+				<div class="panel-menu">
+					<button class="menu-btn" onclick="showPanel('message')">Message</button>
+					<button class="menu-btn" onclick="showPanel('email')">Email</button>
+				</div>
+            </div>
+            <div id="audit-trail" class="panel-section" style="display: none;">
+               <table>
+					<thead>
+						<tr>
+							<th>Date & Time</th>
+							<th>Created By</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+		// Function to toggle visibility of panels
+		function showPanel(panelId) {
+			// Hide all sections
+			const sections = document.querySelectorAll('.panel-section');
+			sections.forEach(section => section.style.display = 'none');
+
+			// Show the selected section
+			document.getElementById(panelId).style.display = 'block';
+
+			// Remove 'active' class from all menu buttons
+			const buttons = document.querySelectorAll('.menu-btn');
+			buttons.forEach(button => button.classList.remove('active'));
+
+			// Add 'active' class to the clicked button
+			const activeButton = document.querySelector(`[onclick="showPanel('${panelId}')"]`);
+			if (activeButton) {
+				activeButton.classList.add('active');
+			}
+		}
+
+		// Functionality for "Select All" checkbox
+		document.addEventListener('DOMContentLoaded', () => {
+			const selectAllCheckbox = document.getElementById('select-all');
+			const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+
+			if (selectAllCheckbox) {
+				selectAllCheckbox.addEventListener('change', function () {
+					rowCheckboxes.forEach(checkbox => {
+						checkbox.checked = selectAllCheckbox.checked;
+					});
+				});
+			}
+		});
+	</script>
+</body>
+</html>
